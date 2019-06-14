@@ -8,5 +8,5 @@ InVision link: https://invis.io/27SHF0B9SJH
 Please contact me with any questions: 
 <br>
 sfmaia.veres@gmail.com
-<br>
+<br><br>
 415-665-6242
