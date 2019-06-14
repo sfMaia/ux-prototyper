@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<!-- I put a 'header' before the body because it contains the title of the page and does not
+    need to be seen on the page. -->  
+<header>
+    <title>Prototype Test, Form</title>
+</header>
+
+<body>
+
+<!-- I use the 'heading' tag instead of 'header' to make the form title stand out more. -->
+    <h2>Company X Response Form</h2>
+
+<!-- I didn't use the 'paragraph' tag because the 'heading' tag creates enough space 
+    between it and the following text. -->   
+    Thank you for your interest in the position at Company X.
+
+<!-- I created a second html page called "submittedform.html" to let the user know once they 
+    hit the "Send" button their form has been sent correctly. -->
+    <form action="submittedform.html" method="POST">
+        <header>
+            Please fill out the following form.
+        </header>
+        <br>
+
+<!-- I put 'First Name' and 'Last Name' fields on the same row because they go together. I did the same 
+    with the 'User Name' and 'Password' fields. I put a blank row between each of these rows so the text 
+    is easier to read and inserted a blank row before the 'Select Your Location' field. -->        
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required autocomplete="firstname">
+        <label for="lastname"> Last Name:</label>
+        <input type="text" name="lastname" id="lastname" required autocomplete="lastname"><br><br>
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" required autocomplete="username">
+        <label for="password"> Password:</label>
+        <input type="text" name="password" id="password" required autocomplete="password"><br><br>
+        <label for="states">Select Your Location:</label>
+        <input list="states" name="states" placeholder="Starting typing" required autocomplete="states">
+        
+<!-- For better accessibility the user can start typing the name of their state and a shorter list
+    of options will be shown; less or no scrolling.-->
+        <datalist id="states">
+            <option value="Alabama">
+            <option value="Alaska">
+            <option value="Arizona">
+            <option value="Arkansas">
+            <option value="California">
+            <option value="Colorado">
+            <option value="Connecticut">
+            <option value="Delaware">
+            <option value="Florida">
+            <option value="Georgia">
+            <option value="Hawaii">
+            <option value="Idaho">          
+            <option value="Illinois">
+            <option value="Indiana">
+            <option value="Iowa">
+            <option value="Kansas">
+            <option value="Kentucky">
+            <option value="Louisiana">          
+            <option value="Maine">
+            <option value="Alaska">
+            <option value="Maryland">
+            <option value="Massachusetts">
+            <option value="Michigan">
+            <option value="Minnesota">
+            <option value="Mississippi">
+            <option value="Missouri">
+            <option value="Montana">
+            <option value="Nebraska">
+            <option value="Nevada">
+            <option value="New Hampshire">
+            <option value="New Jersey">
+            <option value="New Mexico">
+            <option value="New York">
+            <option value="North Carolina">
+            <option value="North Dakota">
+            <option value="Ohio">          
+            <option value="Oklahoma">
+            <option value="Oregon">
+            <option value="Pennsylvania">
+            <option value="Rhode Island">
+            <option value="South Carolina">
+            <option value="South Dakota">          
+            <option value="Tennessee">
+            <option value="Utah">
+            <option value="Vermont">
+            <option value="Virginia">
+            <option value="Washington">
+            <option value="West Virginia">
+            <option value="Wisconsin">
+            <option value="Wyoming">
+        </datalist>
+
+<!-- I included space between the two buttons so the user is less likely to push the incorrect button.
+    
+    If I were to style this part of the page I would have the 'Reset form' button float-left
+    and the 'SEND' button float-right so the user clearly sees there are two buttons that do different things. -->
+
+        <br><br>
+        <input type="reset" value="Reset form"><br><br><br>
+        <input type="submit" value="SEND">
+        
+    </form>
+
+</body>
+
+</html>
