@@ -4,7 +4,7 @@ Part I HTML: index.html, submittedform.html
 Part IV Prototyping: Sketch file used to design screens for InVision upload 
 <br>
 InVision link: https://invis.io/27SHF0B9SJH
-<br>
+<br><br>
 Please contact me with any questions: 
 <br>
 sfmaia.veres@gmail.com
